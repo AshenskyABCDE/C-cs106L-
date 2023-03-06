@@ -22,7 +22,7 @@ int main(){
     //string_and_ostring();
     //stringToInteger("543");
     //stringstreamState();
-    stringToIntegerTest();
+    //stringToIntegerTest();
     //bufferedExperiment(cout); //直观感受cout缓冲区导致程序运行会很慢
     //bufferedExperiment(cerr);
 
@@ -33,11 +33,9 @@ void Stringstream_1(){
     /*
         读入一行
     */   
-    getline(cin , str);
-    s << str;
     int num;
     vector<int>nums;
-    while(s >> num){
+    while(getline(s,str,',')){
         nums.push_back(num);
     }
     for(auto x:nums){
