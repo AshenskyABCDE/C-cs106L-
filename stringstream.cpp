@@ -36,6 +36,7 @@ void Stringstream_1(){
     int num;
     vector<int>nums;
     while(getline(s,str,',')){
+        num=stoi(str);
         nums.push_back(num);
     }
     for(auto x:nums){
