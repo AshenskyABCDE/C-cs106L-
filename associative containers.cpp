@@ -2,6 +2,8 @@
 #include <set>
 #include <vector>
 #include <string>
+#include <algorithm>
+#include <map>
 
 using std::cin;
 using std::cout;
@@ -35,6 +37,15 @@ void vector_find(std::vector<int> &vec,int Elem){
         cout<<"have"<<std::endl;
     }
 
+}
+void map_iterator(std::map<int,int> &mp){
+    std::map<int,int>::iterator i = mp.begin();
+    std::map<int,int>::iterator j = mp.end();
+    while(i!=j){
+        cout<<(*i).second<<" ";
+        i++;
+    }
+    cout<<std::endl;
 }
 int main(){
     STL_Work3();
